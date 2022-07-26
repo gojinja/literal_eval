@@ -1,6 +1,10 @@
 package literal
 
-import "github.com/google/go-cmp/cmp"
+import (
+	"fmt"
+	"github.com/gojinja/literal_eval/ast"
+	"github.com/google/go-cmp/cmp"
+)
 
 // Dict represents Python's dict. It can't be Go's map as in Python more elements can be keys.
 type Dict struct {
@@ -8,8 +12,11 @@ type Dict struct {
 	Value []interface{}
 }
 
-func newDict(keys []interface{}, values []interface{}) (res Dict) {
+func newDict(keys []interface{}, values []interface{}, rawKeys []ast.Expr) (res Dict, err error) {
 	for i, k := range keys {
+		if !isHashable(rawKeys[i]) {
+			return res, fmt.Errorf("dict key is not hashable")
+		}
 		in := false
 		for _, oK := range keys[i+1:] {
 			if cmp.Equal(k, oK) {

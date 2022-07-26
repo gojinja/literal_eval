@@ -151,7 +151,7 @@ func parseSet(s *ast.Set) (Set, error) {
 	if err != nil {
 		return Set{}, err
 	}
-	return newSet(elts), nil
+	return newSet(elts, s.Elts)
 }
 
 func parseElts(elts []ast.Expr) ([]interface{}, error) {
@@ -175,7 +175,6 @@ func parseList(v *ast.List) ([]interface{}, error) {
 }
 
 func parseDict(dict *ast.Dict) (res Dict, err error) {
-	// TODO limit what kinds of elements can be keys.
 	keys, err := parseElts(dict.Keys)
 	if err != nil {
 		return
@@ -184,5 +183,5 @@ func parseDict(dict *ast.Dict) (res Dict, err error) {
 	if err != nil {
 		return Dict{}, err
 	}
-	return newDict(keys, values), nil
+	return newDict(keys, values, dict.Keys)
 }
