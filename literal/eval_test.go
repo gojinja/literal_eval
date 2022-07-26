@@ -40,7 +40,8 @@ func TestCorrect(t *testing.T) {
 		{"True", true, false},
 		{"False", false, false},
 		{"b'foo'", []byte("foo"), false},
-		//{"1 + 1j", complex(1, 1), false}, // TODO currently only imaginary numbers are supported
+		{"1 + 1j", complex(1, 1), false},
+		{"1.5 + 1.3j", complex(1.5, 1.3), false},
 	}
 	for _, c := range cases {
 		runEvalTest(t, c)
@@ -53,6 +54,10 @@ func TestWrong(t *testing.T) {
 		"{{}: {}}",
 		"{{1:2}: {}}",
 		"{{1:2}}",
+		"1 + 1",
+		"1j + 1j",
+		"1 - 1",
+		"1j - 1j",
 		// TODO
 	}
 	for _, c := range cases {
