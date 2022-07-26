@@ -65,13 +65,50 @@ func parseValue(astExpr ast.Expr) (interface{}, error) {
 		return parseBytes(v)
 	case *ast.Num:
 		return parseNum(v)
+	case *ast.UnaryOp:
+		return parseUnaryOp(v)
 	default:
 		return nil, fmt.Errorf("unsupported type type")
 	}
 }
 
+func parseUnaryOp(v *ast.UnaryOp) (interface{}, error) {
+	num, ok := v.Operand.(*ast.Num)
+	if !ok {
+		return nil, fmt.Errorf("expected num")
+	}
+	switch v.Op {
+	case ast.UAdd:
+		pos, ok := num.N.(py.I__pos__)
+		if !ok {
+			return nil, fmt.Errorf("can't get positive value of element")
+		}
+		v, err := pos.M__pos__()
+		if err != nil {
+			return nil, err
+		}
+		return pyNumToNum(v)
+	case ast.USub:
+		pos, ok := num.N.(py.I__neg__)
+		if !ok {
+			return nil, fmt.Errorf("can't get negative value of element")
+		}
+		v, err := pos.M__neg__()
+		if err != nil {
+			return nil, err
+		}
+		return pyNumToNum(v)
+	default:
+		return nil, fmt.Errorf("not supported unary operand")
+	}
+}
+
 func parseNum(num *ast.Num) (interface{}, error) {
-	switch v := num.N.(type) {
+	return pyNumToNum(num.N)
+}
+
+func pyNumToNum(num ast.Object) (interface{}, error) {
+	switch v := num.(type) {
 	case py.Int:
 		return int64(v), nil
 	case *py.BigInt:
