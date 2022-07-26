@@ -14,19 +14,19 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/stdlib/marshal"
-	"github.com/go-python/gpython/vm"
+	"github.com/gojinja/literal_eval/py"
+	"github.com/gojinja/literal_eval/stdlib/marshal"
+	"github.com/gojinja/literal_eval/vm"
 
-	_ "github.com/go-python/gpython/stdlib/binascii"
-	_ "github.com/go-python/gpython/stdlib/builtin"
-	_ "github.com/go-python/gpython/stdlib/glob"
-	_ "github.com/go-python/gpython/stdlib/math"
-	_ "github.com/go-python/gpython/stdlib/os"
-	_ "github.com/go-python/gpython/stdlib/string"
-	_ "github.com/go-python/gpython/stdlib/sys"
-	_ "github.com/go-python/gpython/stdlib/tempfile"
-	_ "github.com/go-python/gpython/stdlib/time"
+	_ "github.com/gojinja/literal_eval/stdlib/binascii"
+	_ "github.com/gojinja/literal_eval/stdlib/builtin"
+	_ "github.com/gojinja/literal_eval/stdlib/glob"
+	_ "github.com/gojinja/literal_eval/stdlib/math"
+	_ "github.com/gojinja/literal_eval/stdlib/os"
+	_ "github.com/gojinja/literal_eval/stdlib/string"
+	_ "github.com/gojinja/literal_eval/stdlib/sys"
+	_ "github.com/gojinja/literal_eval/stdlib/tempfile"
+	_ "github.com/gojinja/literal_eval/stdlib/time"
 )
 
 func init() {

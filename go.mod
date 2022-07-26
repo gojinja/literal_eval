@@ -1,4 +1,4 @@
-module github.com/go-python/gpython
+module github.com/gojinja/literal_eval
 
 go 1.17
 
