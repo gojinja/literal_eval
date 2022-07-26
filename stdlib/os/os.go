@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 var (

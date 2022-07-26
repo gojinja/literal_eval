@@ -7,7 +7,7 @@
 package compile
 
 import (
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 var compileTestData = []struct {

@@ -9,7 +9,7 @@ package time
 import (
 	"time"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 const time_doc = `time() -> floating point number

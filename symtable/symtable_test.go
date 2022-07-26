@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-python/gpython/parser"
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/parser"
+	"github.com/gojinja/literal_eval/py"
 )
 
 func EqString(t *testing.T, name string, a, b string) {

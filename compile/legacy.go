@@ -11,8 +11,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/stdlib/marshal"
+	"github.com/gojinja/literal_eval/py"
+	"github.com/gojinja/literal_eval/stdlib/marshal"
 )
 
 // Compile with python3.4 - not used any more but keep for the moment!

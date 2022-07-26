@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-python/gpython/compile"
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/compile"
+	"github.com/gojinja/literal_eval/py"
 	"github.com/google/go-cmp/cmp"
 
-	_ "github.com/go-python/gpython/stdlib"
+	_ "github.com/gojinja/literal_eval/stdlib"
 )
 
 var gContext = py.NewContext(py.DefaultContextOpts())

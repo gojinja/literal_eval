@@ -7,7 +7,7 @@ package binascii_test
 import (
 	"testing"
 
-	"github.com/go-python/gpython/pytest"
+	"github.com/gojinja/literal_eval/pytest"
 )
 
 func TestBinascii(t *testing.T) {

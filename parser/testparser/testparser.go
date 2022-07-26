@@ -11,8 +11,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/go-python/gpython/compile"
-	"github.com/go-python/gpython/parser"
+	"github.com/gojinja/literal_eval/compile"
+	"github.com/gojinja/literal_eval/parser"
 )
 
 var (

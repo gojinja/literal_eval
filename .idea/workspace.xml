@@ -5,33 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af1808ec-51af-4d7a-be35-fcc2cec375b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/examples/chudtest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/lib/REPL-startup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/lib/mylib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/mylib-demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/mylib.module.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding/testdata/embedding_out_golden.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/multi-context/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/pi_chudnovsky_bs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/pystone.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/cli/cli.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/repl.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/repl_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/serve.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/wasm_exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/web/wasm_exec.js.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/dump.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/dump.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/dump_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/dump_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/compile.go" beforeDir="false" afterPath="$PROJECT_DIR$/compile/compile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/compile_data_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/compile/compile_data_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/compile_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/compile/compile_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/instructions.go" beforeDir="false" afterPath="$PROJECT_DIR$/compile/instructions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/legacy.go" beforeDir="false" afterPath="$PROJECT_DIR$/compile/legacy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importlib/importlib.go" beforeDir="false" afterPath="$PROJECT_DIR$/importlib/importlib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/grammar_data_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/grammar_data_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/grammar_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/grammar_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/lexer.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/lexer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/lexer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/stringescape.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/stringescape.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/stringescape_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/stringescape_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/testparser/testparser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/testparser/testparser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/y.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/y.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/py_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/py/py_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest/pytest.go" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/pytest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/binascii/binascii.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/binascii/binascii.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/binascii/binascii_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/binascii/binascii_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/builtin/builtin.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/builtin/builtin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/builtin/builtin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/builtin/builtin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/glob/glob.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/glob/glob.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/glob/glob_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/glob/glob_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/marshal/marshal.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/marshal/marshal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/math/math.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/math/math.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/math/math_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/math/math_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/os/os.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/os/os.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/os/os_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/os/os_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/string/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/string/string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/string/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/string/string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/sys/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/sys/sys.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/tempfile/tempfile.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/tempfile/tempfile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/tempfile/tempfile_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/tempfile/tempfile_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/time/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/time/time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdlib/time/time_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stdlib/time/time_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symtable/symtable.go" beforeDir="false" afterPath="$PROJECT_DIR$/symtable/symtable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symtable/symtable_data_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/symtable/symtable_data_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symtable/symtable_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/symtable/symtable_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/builtin.go" beforeDir="false" afterPath="$PROJECT_DIR$/vm/builtin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/eval.go" beforeDir="false" afterPath="$PROJECT_DIR$/vm/eval.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/vm.go" beforeDir="false" afterPath="$PROJECT_DIR$/vm/vm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/vm_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vm/vm_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,27 +72,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CTrOIXZLWo6HDGWBCaQ0LlyKyv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/badochov/gpython",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/badochov/gpython&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Build.go build github.com/gojinja/literal_eval">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gpython" />

@@ -14,7 +14,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 func EqString(t *testing.T, name string, a, b string) {

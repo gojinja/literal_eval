@@ -8,6 +8,7 @@ __pycache__
 cover.out
 /junk
 /dist
+/.idea
 
 # tests
 stdlib/builtin/testfile

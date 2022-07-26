@@ -7,7 +7,7 @@ package math_test
 import (
 	"testing"
 
-	"github.com/go-python/gpython/pytest"
+	"github.com/gojinja/literal_eval/pytest"
 )
 
 func TestVm(t *testing.T) {

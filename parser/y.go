@@ -15,8 +15,8 @@ import __yyfmt__ "fmt"
 import (
 	"fmt"
 
-	"github.com/go-python/gpython/ast"
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/ast"
+	"github.com/gojinja/literal_eval/py"
 )
 
 // NB can put code blocks in not just at the end

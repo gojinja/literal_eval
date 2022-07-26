@@ -10,8 +10,8 @@ import (
 	"math/big"
 	"unicode/utf8"
 
-	"github.com/go-python/gpython/compile"
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/compile"
+	"github.com/gojinja/literal_eval/py"
 )
 
 const builtin_doc = `Built-in functions, exceptions, and other objects.

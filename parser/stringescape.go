@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"strconv"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 // DecodeEscape unescapes a backslash-escaped buffer

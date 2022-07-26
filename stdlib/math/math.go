@@ -16,7 +16,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 /* Here are some comments from Tim Peters, extracted from the

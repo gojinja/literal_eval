@@ -20,7 +20,7 @@ package sys
 import (
 	"os"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 const module_doc = `This module provides access to some objects used or maintained by the

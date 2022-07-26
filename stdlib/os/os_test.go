@@ -7,7 +7,7 @@ package os_test
 import (
 	"testing"
 
-	"github.com/go-python/gpython/pytest"
+	"github.com/gojinja/literal_eval/pytest"
 )
 
 func TestOs(t *testing.T) {

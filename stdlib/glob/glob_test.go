@@ -7,7 +7,7 @@ package glob_test
 import (
 	"testing"
 
-	"github.com/go-python/gpython/pytest"
+	"github.com/gojinja/literal_eval/pytest"
 )
 
 func TestGlob(t *testing.T) {

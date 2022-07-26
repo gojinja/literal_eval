@@ -11,8 +11,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/go-python/gpython/py"
-	"github.com/go-python/gpython/pytest"
+	"github.com/gojinja/literal_eval/py"
+	"github.com/gojinja/literal_eval/pytest"
 )
 
 func TestVm(t *testing.T) {

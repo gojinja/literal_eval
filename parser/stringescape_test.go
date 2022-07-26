@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/go-python/gpython/py"
+	"github.com/gojinja/literal_eval/py"
 )
 
 func TestDecodeEscape(t *testing.T) {
