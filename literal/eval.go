@@ -67,8 +67,46 @@ func parseValue(astExpr ast.Expr) (interface{}, error) {
 		return parseNum(v)
 	case *ast.UnaryOp:
 		return parseUnaryOp(v)
+	case *ast.BinOp:
+		return parseBinOp(v)
 	default:
 		return nil, fmt.Errorf("unsupported type type")
+	}
+}
+
+func parseBinOp(b *ast.BinOp) (interface{}, error) {
+	left, ok := b.Left.(*ast.Num)
+	if !ok {
+		return nil, fmt.Errorf("expected num")
+	}
+	right, ok := b.Right.(*ast.Num)
+	if !ok {
+		return nil, fmt.Errorf("expected num")
+	}
+
+	if _, ok := left.N.(py.Complex); ok {
+		return nil, fmt.Errorf("addition is not permitted")
+	}
+	rC, ok := right.N.(py.Complex)
+	if !ok {
+		return nil, fmt.Errorf("addition is not permitted")
+	}
+
+	switch b.Op {
+	case ast.Add:
+		v, err := rC.M__radd__(left.N)
+		if err != nil {
+			return nil, err
+		}
+		return pyNumToNum(v)
+	case ast.Sub:
+		v, err := rC.M__rsub__(left.N)
+		if err != nil {
+			return nil, err
+		}
+		return pyNumToNum(v)
+	default:
+		return nil, fmt.Errorf("not supported binary operand")
 	}
 }
 
