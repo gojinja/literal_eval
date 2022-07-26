@@ -12,13 +12,46 @@ type evalTest struct {
 	err bool
 }
 
-func Test(t *testing.T) {
+func TestCorrect(t *testing.T) {
 	cases := []evalTest{
 		{"42", int64(42), false},
-		{"-42", int64(42), false},
+		{"-42", int64(-42), false},
+		{"+42", int64(42), false},
+		{"42.", 42., false},
+		{"-42.", -42., false},
+		{"+42.", 42., false},
+		{"1j", complex(0, 1), false},
+		{"-42j", complex(0, -42), false},
+		{"+42j", complex(0, 42), false},
+		{"'foo'", "foo", false},
+		{"\"foo\"", "foo", false},
+		{"...", Ellipsis{}, false},
+		{"[]", []interface{}{}, false},
+		{"[1, 'foo', ..., 'bar']", []interface{}{int64(1), "foo", Ellipsis{}, "bar"}, false},
+		{"(1, 'foo', ..., 'bar')", []interface{}{int64(1), "foo", Ellipsis{}, "bar"}, false},
+		{"(1, 'foo', ..., 'bar',)", []interface{}{int64(1), "foo", Ellipsis{}, "bar"}, false},
+		{"{1, 'foo', ..., 'bar',}", newSet([]interface{}{int64(1), "foo", Ellipsis{}, "bar"}), false},
+		{"{1, 1}", Set{[]interface{}{int64(1)}}, false},
+		{"{}", Dict{}, false},
+		{"{'foo': 'bar'}", newDict([]interface{}{"foo"}, []interface{}{"bar"}), false},
+		{"{('foo',1): 'bar'}", newDict([]interface{}{[]interface{}{"foo", int64(1)}}, []interface{}{"bar"}), false},
+		{"None", nil, false},
+		{"True", true, false},
+		{"False", false, false},
+		{"b'foo'", []byte("foo"), false},
+		//{"1 + 1j", complex(1, 1), false}, // TODO currently only imaginary numbers are supported
 	}
 	for _, c := range cases {
 		runEvalTest(t, c)
+	}
+}
+
+func TestWrong(t *testing.T) {
+	cases := []string{
+		// TODO
+	}
+	for _, c := range cases {
+		runEvalTest(t, evalTest{c, nil, true})
 	}
 }
 

@@ -146,6 +146,7 @@ func parseString(s *ast.Str) (string, error) {
 }
 
 func parseSet(s *ast.Set) (Set, error) {
+	// TODO limit what kinds of elements can be keys.
 	elts, err := parseElts(s.Elts)
 	if err != nil {
 		return Set{}, err
@@ -154,7 +155,7 @@ func parseSet(s *ast.Set) (Set, error) {
 }
 
 func parseElts(elts []ast.Expr) ([]interface{}, error) {
-	res := make([]interface{}, 0, len(elts))
+	res := make([]interface{}, len(elts))
 	var err error
 	for i, el := range elts {
 		res[i], err = parseValue(el)
@@ -174,6 +175,7 @@ func parseList(v *ast.List) ([]interface{}, error) {
 }
 
 func parseDict(dict *ast.Dict) (res Dict, err error) {
+	// TODO limit what kinds of elements can be keys.
 	keys, err := parseElts(dict.Keys)
 	if err != nil {
 		return

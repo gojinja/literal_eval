@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af1808ec-51af-4d7a-be35-fcc2cec375b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/literal/eval.go" beforeDir="false" afterPath="$PROJECT_DIR$/literal/eval.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/literal/eval_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/literal/eval_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go Test.Test in github.com/gojinja/literal_eval/literal">
+  <component name="RunManager" selected="Go Test.TestCorrect in github.com/gojinja/literal_eval/literal">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gpython" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,6 +91,18 @@
       <pattern value="^\QTest\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestCorrect in github.com/gojinja/literal_eval/literal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gpython" />
+      <working_directory value="$PROJECT_DIR$/literal" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/gojinja/literal_eval/literal" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCorrect\E$" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="gpython" />
       <working_directory value="$PROJECT_DIR$" />
@@ -102,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCorrect in github.com/gojinja/literal_eval/literal" />
         <item itemvalue="Go Test.Test in github.com/gojinja/literal_eval/literal" />
         <item itemvalue="Go Build.go build github.com/gojinja/literal_eval" />
         <item itemvalue="Go Build.go build github.com/go-python/gpython/scratch" />
@@ -125,5 +139,16 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/literal/eval.go</url>
+          <line>48</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
