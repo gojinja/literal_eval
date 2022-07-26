@@ -49,6 +49,10 @@ func TestCorrect(t *testing.T) {
 
 func TestWrong(t *testing.T) {
 	cases := []string{
+		"{{}}",
+		"{{}: {}}",
+		"{{1:2}: {}}",
+		"{{1:2}}",
 		// TODO
 	}
 	for _, c := range cases {

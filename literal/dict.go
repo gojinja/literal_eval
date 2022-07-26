@@ -8,8 +8,8 @@ import (
 
 // Dict represents Python's dict. It can't be Go's map as in Python more elements can be keys.
 type Dict struct {
-	Keys  []interface{}
-	Value []interface{}
+	Keys   []interface{}
+	Values []interface{}
 }
 
 func newDict(keys []interface{}, values []interface{}, rawKeys []ast.Expr) (res Dict, err error) {
@@ -26,7 +26,7 @@ func newDict(keys []interface{}, values []interface{}, rawKeys []ast.Expr) (res 
 		}
 		if !in {
 			res.Keys = append(res.Keys, k)
-			res.Value = append(res.Keys, values[i])
+			res.Values = append(res.Values, values[i])
 		}
 	}
 	return
@@ -35,7 +35,7 @@ func newDict(keys []interface{}, values []interface{}, rawKeys []ast.Expr) (res 
 func (d *Dict) Get(key interface{}) (interface{}, bool) {
 	for i, k := range d.Keys {
 		if cmp.Equal(key, k) {
-			return d.Value[i], true
+			return d.Values[i], true
 		}
 	}
 	return nil, false
